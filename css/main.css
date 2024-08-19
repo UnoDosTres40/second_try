@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Poppins';
+    box-sizing: border-box;
 }
 
 a {
@@ -26,28 +27,95 @@ img {
     width: 100%;
 }
 
-.container {
+.header {
     width: 1170px;
     margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
 }
 
-header {
-    padding: 24px 0;
-}
+
+
 
 .logo {
     font-size: 24px;
     font-weight: 700;
     color: #608BFF;
+    
 }
 
 .nav {
     float: right;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.info {
+.nav_list {
     width: 400px;
     list-style: none;
     display: flex;
     justify-content: space-between;
+}
+
+
+.nav_item {
+    display: inline-block;
+}
+
+.nav_item_link {
+    color:grey;
+}
+
+.nav_item_link:not(.home):hover {
+    border-bottom: 5px solid #608BFF;
+}
+
+.courses {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background: #608BFF;
+    padding: 12px 24px;
+    border-radius: 28px;
+    transform: all 500ms ease;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.button:hover {
+    background: #4468cc ;
+}
+
+.hero_container {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    padding-top: 77px;
+    justify-content: space-between;
+}
+
+.get {
+    width: 500px;
+    padding-top: 100px;
+}
+  
+.title {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 74px;
+}
+
+.title--orange {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 74px;
+    color: #FF5000;
 }
